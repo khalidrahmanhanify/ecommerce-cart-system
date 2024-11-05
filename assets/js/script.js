@@ -170,7 +170,7 @@ cartProductsContainer.addEventListener("click", (event) => {
 
 // Initialize app and fetch product data
 const initApp = () => {
-  fetch("https://github.com/khalidrahmanhanify/ecommerce-cart-system/blob/main/assets/data/data.json")
+  fetch("https://raw.githubusercontent.com/khalidrahmanhanify/ecommerce-cart-system/refs/heads/main/assets/data/data.json")
     .then((response) => response.json())
     .then((data) => {
       listProduct = data;
