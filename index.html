@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List with Cart</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="products-section">
+        <h1 class="header">Desserts</h1>
+        <div class="products" id="product-list">
+          <!-- Products will be dynamically inserted here -->
+        </div>
+      </div>
+      <div class="cart-container">
+        <h2>Your Cart (0)</h2>
+        <div class="products-shown-here">
+          <img
+            src="assets/images/illustration-empty-cart.svg"
+            alt="Empty Cart"
+          />
+          <p>Your added items will appear here</p>
+        </div>
+        <div class="cart-products" id="cart-products"></div>
+
+        <div class="total">
+          <div class="order-total">
+            <p>Order Total</p>
+            <h1 class="totalAmount">$46.09</h1>
+          </div>
+          <div class="delivery">
+            <img src="assets/images/icon-carbon-neutral.svg" alt="" />
+            <p>This is a <b>Carbon Neutral</b> Delivery</p>
+          </div>
+          <button class="completeOrder">Complete Order</button>
+        </div>
+        <div class="modal-overlay"></div>
+        <div class="modal">
+          <img src="assets/images/icon-order-confirmed.svg" alt="" />
+          <h1>Order Confirmed</h1>
+          <p>we hope you enjoy your food!</p>
+          <div class="complete-products">
+            <div class="cart-prodcut-info">
+              <p class="product-name-cart"></p>
+              <div class="cart-product-sub-info-1">
+                <div>
+                  <span class="cart-product-amount"></span>
+                  <span class="single-prodcut-price-cart"></span>
+                </div>
+                <p class="total-price-cart"></p>
+              </div>
+            </div>
+            <div class="order-total">
+            <p>Order Total</p>
+            <h1 class="totalAmount">$0</h1>
+          </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
